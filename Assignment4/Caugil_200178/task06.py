@@ -86,7 +86,7 @@ g.add((ontology.hasName, RDFS.range, RDFS.Literal))
 # hasHomePage
 g.add((ontology.hasHomePage, RDF.type, RDF.Property))
 g.add((ontology.hasHomePage, RDFS.label, Literal("hasHomePage", datatype=XSD.string)))
-g.add((ontology.hasHomePage, RDFS.domain, ontology.Person))
+g.add((ontology.hasHomePage, RDFS.domain, ontology.FullProfessor)) #FullProfessor no Person
 g.add((ontology.hasHomePage, RDFS.range, RDFS.Literal))
 # Visualize the results
 for s, p, o in g:
